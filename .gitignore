@@ -4,6 +4,9 @@
 /node_modules
 /bower_components
 
+# build files
+/lib/bs/
+
 # IDEs and editors
 /.idea
 .project
@@ -12,6 +15,13 @@
 .settings/
 
 
-#System Files
+# System Files
 .DS_Store
 Thumbs.db
+
+# Tools
+npm-debug.log
+.merlin
+.bsb.lock
+
+

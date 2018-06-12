@@ -3,6 +3,7 @@
 
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Link$ReactTemplate = require("./Link.bs.js");
 
 var component = ReasonReact.statelessComponent("Home");
 
@@ -65,10 +66,11 @@ function make() {
                                                   className: "btn btn-outline-primary btn-sm pull-xs-right"
                                                 }, React.createElement("i", {
                                                       className: "ion-heart"
-                                                    }), "29")), React.createElement("a", {
-                                              className: "preview-link",
-                                              href: ""
-                                            }, React.createElement("h1", undefined, "How to build webapps that scale"), React.createElement("p", undefined, "This is the description for the post."), React.createElement("span", undefined, "Read more...")))), React.createElement("div", {
+                                                    }), "29")), ReasonReact.element(/* None */0, /* None */0, Link$ReactTemplate.make("profile", "preview-link", /* array */[
+                                                  React.createElement("h1", undefined, "How to build webapps that scale"),
+                                                  React.createElement("p", undefined, "This is the description for the post."),
+                                                  React.createElement("span", undefined, "Read more...")
+                                                ])))), React.createElement("div", {
                                       className: "col-md-3"
                                     }, React.createElement("div", {
                                           className: "sidebar"

@@ -9,9 +9,9 @@ let make = _children => {
         </a>
         <ul className="nav navbar-nav pull-xs-right">
           <li className="nav-item">
-            <a className="nav-link active" href="">
+            <Link className="nav-link active" href="/">
               (ReasonReact.string("Home"))
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="">
@@ -20,10 +20,10 @@ let make = _children => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <Link className="nav-link" href="/settings">
               <i className="ion-gear-a" />
               (ReasonReact.string("Settings"))
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="">

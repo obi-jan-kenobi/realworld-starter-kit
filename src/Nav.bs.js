@@ -3,6 +3,7 @@
 
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Link$ReactTemplate = require("./Link.bs.js");
 
 var component = ReasonReact.statelessComponent("Nav");
 
@@ -29,10 +30,7 @@ function make() {
                                   className: "nav navbar-nav pull-xs-right"
                                 }, React.createElement("li", {
                                       className: "nav-item"
-                                    }, React.createElement("a", {
-                                          className: "nav-link active",
-                                          href: ""
-                                        }, "Home")), React.createElement("li", {
+                                    }, ReasonReact.element(/* None */0, /* None */0, Link$ReactTemplate.make("/", "nav-link active", /* array */["Home"]))), React.createElement("li", {
                                       className: "nav-item"
                                     }, React.createElement("a", {
                                           className: "nav-link",
@@ -41,12 +39,12 @@ function make() {
                                               className: "ion-compose"
                                             }))), React.createElement("li", {
                                       className: "nav-item"
-                                    }, React.createElement("a", {
-                                          className: "nav-link",
-                                          href: ""
-                                        }, React.createElement("i", {
-                                              className: "ion-gear-a"
-                                            }), "Settings")), React.createElement("li", {
+                                    }, ReasonReact.element(/* None */0, /* None */0, Link$ReactTemplate.make("/settings", "nav-link", /* array */[
+                                              React.createElement("i", {
+                                                    className: "ion-gear-a"
+                                                  }),
+                                              "Settings"
+                                            ]))), React.createElement("li", {
                                       className: "nav-item"
                                     }, React.createElement("a", {
                                           className: "nav-link",

@@ -45,7 +45,7 @@ let make = _children => {
                   (ReasonReact.string("29"))
                 </button>
               </div>
-              <a href="" className="preview-link">
+              <Link href="profile" className="preview-link">
                 <h1>
                   (ReasonReact.string("How to build webapps that scale"))
                 </h1>
@@ -55,7 +55,7 @@ let make = _children => {
                   )
                 </p>
                 <span> (ReasonReact.string("Read more...")) </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-3">

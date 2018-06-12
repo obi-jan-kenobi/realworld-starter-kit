@@ -11,4 +11,7 @@ module.exports = {
     publicPath: outputDir,
     filename: 'Index.js',
   },
+  serve: {
+    content: path.join(__dirname, "build/")
+  }
 };
